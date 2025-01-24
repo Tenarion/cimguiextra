@@ -1,0 +1,134 @@
+{
+  "ImGuiExtra_Curve": [
+    {
+      "args": "(const char* label,const ImVec2 size,const int maxpoints,ImVec2* points,int* selection,const ImVec2 rangeMin,const ImVec2 rangeMax)",
+      "argsT": [
+        {
+          "name": "label",
+          "type": "const char*"
+        },
+        {
+          "name": "size",
+          "type": "const ImVec2"
+        },
+        {
+          "name": "maxpoints",
+          "type": "const int"
+        },
+        {
+          "name": "points",
+          "type": "ImVec2*"
+        },
+        {
+          "name": "selection",
+          "type": "int*"
+        },
+        {
+          "name": "rangeMin",
+          "type": "const ImVec2"
+        },
+        {
+          "name": "rangeMax",
+          "type": "const ImVec2"
+        }
+      ],
+      "argsoriginal": "(const char* label,const ImVec2& size,const int maxpoints,ImVec2* points,int* selection=nullptr,const ImVec2& rangeMin=ImVec2(0,0),const ImVec2& rangeMax=ImVec2(1,1))",
+      "call_args": "(label,size,maxpoints,points,selection,rangeMin,rangeMax)",
+      "cimguiname": "ImGuiExtra_Curve",
+      "defaults": {
+        "rangeMax": "ImVec2(1,1)",
+        "rangeMin": "ImVec2(0,0)",
+        "selection": "nullptr"
+      },
+      "funcname": "Curve",
+      "location": "imgui_extra:72",
+      "namespace": "ImGuiExtra",
+      "ov_cimguiname": "ImGuiExtra_Curve",
+      "ret": "int",
+      "signature": "(const char*,const ImVec2,const int,ImVec2*,int*,const ImVec2,const ImVec2)",
+      "stname": ""
+    }
+  ],
+  "ImGuiExtra_CurveValue": [
+    {
+      "args": "(float p,int maxpoints,const ImVec2* points)",
+      "argsT": [
+        {
+          "name": "p",
+          "type": "float"
+        },
+        {
+          "name": "maxpoints",
+          "type": "int"
+        },
+        {
+          "name": "points",
+          "type": "const ImVec2*"
+        }
+      ],
+      "argsoriginal": "(float p,int maxpoints,const ImVec2* points)",
+      "call_args": "(p,maxpoints,points)",
+      "cimguiname": "ImGuiExtra_CurveValue",
+      "defaults": {},
+      "funcname": "CurveValue",
+      "location": "imgui_extra:73",
+      "namespace": "ImGuiExtra",
+      "ov_cimguiname": "ImGuiExtra_CurveValue",
+      "ret": "float",
+      "signature": "(float,int,const ImVec2*)",
+      "stname": ""
+    }
+  ],
+  "ImGuiExtra_CurveValueSmooth": [
+    {
+      "args": "(float p,int maxpoints,const ImVec2* points)",
+      "argsT": [
+        {
+          "name": "p",
+          "type": "float"
+        },
+        {
+          "name": "maxpoints",
+          "type": "int"
+        },
+        {
+          "name": "points",
+          "type": "const ImVec2*"
+        }
+      ],
+      "argsoriginal": "(float p,int maxpoints,const ImVec2* points)",
+      "call_args": "(p,maxpoints,points)",
+      "cimguiname": "ImGuiExtra_CurveValueSmooth",
+      "defaults": {},
+      "funcname": "CurveValueSmooth",
+      "location": "imgui_extra:74",
+      "namespace": "ImGuiExtra",
+      "ov_cimguiname": "ImGuiExtra_CurveValueSmooth",
+      "ret": "float",
+      "signature": "(float,int,const ImVec2*)",
+      "stname": ""
+    }
+  ],
+  "ImGuiExtra_SanityCheck": [
+    {
+      "args": "(const char* text)",
+      "argsT": [
+        {
+          "name": "text",
+          "type": "const char*"
+        }
+      ],
+      "argsoriginal": "(const char* text)",
+      "call_args": "(text)",
+      "cimguiname": "ImGuiExtra_SanityCheck",
+      "defaults": {},
+      "funcname": "SanityCheck",
+      "location": "imgui_extra:75",
+      "namespace": "ImGuiExtra",
+      "ov_cimguiname": "ImGuiExtra_SanityCheck",
+      "ret": "void",
+      "signature": "(const char*)",
+      "stname": ""
+    }
+  ]
+}
