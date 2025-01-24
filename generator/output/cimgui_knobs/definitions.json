@@ -1,0 +1,220 @@
+{
+  "ImGuiKnobs_Knob": [
+    {
+      "args": "(const char* label,float* p_value,float v_min,float v_max,float speed,const char* format,ImGuiKnobVariant variant,float size,ImGuiKnobFlags flags,int steps,float angle_min,float angle_max)",
+      "argsT": [
+        {
+          "name": "label",
+          "type": "const char*"
+        },
+        {
+          "name": "p_value",
+          "type": "float*"
+        },
+        {
+          "name": "v_min",
+          "type": "float"
+        },
+        {
+          "name": "v_max",
+          "type": "float"
+        },
+        {
+          "name": "speed",
+          "type": "float"
+        },
+        {
+          "name": "format",
+          "type": "const char*"
+        },
+        {
+          "name": "variant",
+          "type": "ImGuiKnobVariant"
+        },
+        {
+          "name": "size",
+          "type": "float"
+        },
+        {
+          "name": "flags",
+          "type": "ImGuiKnobFlags"
+        },
+        {
+          "name": "steps",
+          "type": "int"
+        },
+        {
+          "name": "angle_min",
+          "type": "float"
+        },
+        {
+          "name": "angle_max",
+          "type": "float"
+        }
+      ],
+      "argsoriginal": "(const char* label,float* p_value,float v_min,float v_max,float speed=0,const char* format=\"%.3f\",ImGuiKnobVariant variant=ImGuiKnobVariant_Tick,float size=0,ImGuiKnobFlags flags=0,int steps=10,float angle_min=-1,float angle_max=-1)",
+      "call_args": "(label,p_value,v_min,v_max,speed,format,variant,size,flags,steps,angle_min,angle_max)",
+      "cimguiname": "ImGuiKnobs_Knob",
+      "defaults": {
+        "angle_max": "-1",
+        "angle_min": "-1",
+        "flags": "0",
+        "format": "\"%.3f\"",
+        "size": "0",
+        "speed": "0",
+        "steps": "10",
+        "variant": "ImGuiKnobVariant_Tick"
+      },
+      "funcname": "Knob",
+      "location": "imgui_knobs:47",
+      "namespace": "ImGuiKnobs",
+      "ov_cimguiname": "ImGuiKnobs_Knob",
+      "ret": "bool",
+      "signature": "(const char*,float*,float,float,float,const char*,ImGuiKnobVariant,float,ImGuiKnobFlags,int,float,float)",
+      "stname": ""
+    }
+  ],
+  "ImGuiKnobs_KnobInt": [
+    {
+      "args": "(const char* label,int* p_value,int v_min,int v_max,float speed,const char* format,ImGuiKnobVariant variant,float size,ImGuiKnobFlags flags,int steps,float angle_min,float angle_max)",
+      "argsT": [
+        {
+          "name": "label",
+          "type": "const char*"
+        },
+        {
+          "name": "p_value",
+          "type": "int*"
+        },
+        {
+          "name": "v_min",
+          "type": "int"
+        },
+        {
+          "name": "v_max",
+          "type": "int"
+        },
+        {
+          "name": "speed",
+          "type": "float"
+        },
+        {
+          "name": "format",
+          "type": "const char*"
+        },
+        {
+          "name": "variant",
+          "type": "ImGuiKnobVariant"
+        },
+        {
+          "name": "size",
+          "type": "float"
+        },
+        {
+          "name": "flags",
+          "type": "ImGuiKnobFlags"
+        },
+        {
+          "name": "steps",
+          "type": "int"
+        },
+        {
+          "name": "angle_min",
+          "type": "float"
+        },
+        {
+          "name": "angle_max",
+          "type": "float"
+        }
+      ],
+      "argsoriginal": "(const char* label,int* p_value,int v_min,int v_max,float speed=0,const char* format=\"%i\",ImGuiKnobVariant variant=ImGuiKnobVariant_Tick,float size=0,ImGuiKnobFlags flags=0,int steps=10,float angle_min=-1,float angle_max=-1)",
+      "call_args": "(label,p_value,v_min,v_max,speed,format,variant,size,flags,steps,angle_min,angle_max)",
+      "cimguiname": "ImGuiKnobs_KnobInt",
+      "defaults": {
+        "angle_max": "-1",
+        "angle_min": "-1",
+        "flags": "0",
+        "format": "\"%i\"",
+        "size": "0",
+        "speed": "0",
+        "steps": "10",
+        "variant": "ImGuiKnobVariant_Tick"
+      },
+      "funcname": "KnobInt",
+      "location": "imgui_knobs:60",
+      "namespace": "ImGuiKnobs",
+      "ov_cimguiname": "ImGuiKnobs_KnobInt",
+      "ret": "bool",
+      "signature": "(const char*,int*,int,int,float,const char*,ImGuiKnobVariant,float,ImGuiKnobFlags,int,float,float)",
+      "stname": ""
+    }
+  ],
+  "color_set_color_set": [
+    {
+      "args": "(ImColor base,ImColor hovered,ImColor active)",
+      "argsT": [
+        {
+          "name": "base",
+          "type": "ImColor"
+        },
+        {
+          "name": "hovered",
+          "type": "ImColor"
+        },
+        {
+          "name": "active",
+          "type": "ImColor"
+        }
+      ],
+      "argsoriginal": "(ImColor base,ImColor hovered,ImColor active)",
+      "call_args": "(base,hovered,active)",
+      "cimguiname": "color_set_color_set",
+      "constructor": true,
+      "defaults": {},
+      "funcname": "color_set",
+      "location": "imgui_knobs:37",
+      "ov_cimguiname": "color_set_color_set_Color",
+      "signature": "(ImColor,ImColor,ImColor)",
+      "stname": "color_set"
+    },
+    {
+      "args": "(ImColor color)",
+      "argsT": [
+        {
+          "name": "color",
+          "type": "ImColor"
+        }
+      ],
+      "argsoriginal": "(ImColor color)",
+      "call_args": "(color)",
+      "cimguiname": "color_set_color_set",
+      "constructor": true,
+      "defaults": {},
+      "funcname": "color_set",
+      "location": "imgui_knobs:40",
+      "ov_cimguiname": "color_set_color_set_Nil",
+      "signature": "(ImColor)",
+      "stname": "color_set"
+    }
+  ],
+  "color_set_destroy": [
+    {
+      "args": "(color_set* self)",
+      "argsT": [
+        {
+          "name": "self",
+          "type": "color_set*"
+        }
+      ],
+      "call_args": "(self)",
+      "cimguiname": "color_set_destroy",
+      "defaults": {},
+      "destructor": true,
+      "location": "imgui_knobs:37",
+      "ov_cimguiname": "color_set_destroy",
+      "ret": "void",
+      "signature": "(color_set*)",
+      "stname": "color_set"
+    }
+  ]
+}

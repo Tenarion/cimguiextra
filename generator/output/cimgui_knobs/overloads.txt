@@ -1,0 +1,5 @@
+----------------overloadings---------------------------
+color_set_color_set	2
+1	nil	color_set_color_set_Color (ImColor,ImColor,ImColor)
+2	nil	color_set_color_set_Nil (ImColor)
+2 overloaded

@@ -1,0 +1,103 @@
+{
+  "enums": {
+    "ImGuiKnobFlags_": [
+      {
+        "calc_value": 1,
+        "name": "ImGuiKnobFlags_NoTitle",
+        "value": "1 << 0"
+      },
+      {
+        "calc_value": 2,
+        "name": "ImGuiKnobFlags_NoInput",
+        "value": "1 << 1"
+      },
+      {
+        "calc_value": 4,
+        "name": "ImGuiKnobFlags_ValueTooltip",
+        "value": "1 << 2"
+      },
+      {
+        "calc_value": 8,
+        "name": "ImGuiKnobFlags_DragHorizontal",
+        "value": "1 << 3"
+      },
+      {
+        "calc_value": 16,
+        "name": "ImGuiKnobFlags_DragVertical",
+        "value": "1 << 4"
+      },
+      {
+        "calc_value": 32,
+        "name": "ImGuiKnobFlags_Logarithmic",
+        "value": "1 << 5"
+      },
+      {
+        "calc_value": 64,
+        "name": "ImGuiKnobFlags_AlwaysClamp",
+        "value": "1 << 6"
+      }
+    ],
+    "ImGuiKnobVariant_": [
+      {
+        "calc_value": 1,
+        "name": "ImGuiKnobVariant_Tick",
+        "value": "1 << 0"
+      },
+      {
+        "calc_value": 2,
+        "name": "ImGuiKnobVariant_Dot",
+        "value": "1 << 1"
+      },
+      {
+        "calc_value": 4,
+        "name": "ImGuiKnobVariant_Wiper",
+        "value": "1 << 2"
+      },
+      {
+        "calc_value": 8,
+        "name": "ImGuiKnobVariant_WiperOnly",
+        "value": "1 << 3"
+      },
+      {
+        "calc_value": 16,
+        "name": "ImGuiKnobVariant_WiperDot",
+        "value": "1 << 4"
+      },
+      {
+        "calc_value": 32,
+        "name": "ImGuiKnobVariant_Stepped",
+        "value": "1 << 5"
+      },
+      {
+        "calc_value": 64,
+        "name": "ImGuiKnobVariant_Space",
+        "value": "1 << 6"
+      }
+    ]
+  },
+  "enumtypes": [],
+  "locations": {
+    "ImGuiKnobFlags_": "imgui_knobs:8",
+    "ImGuiKnobVariant_": "imgui_knobs:20",
+    "color_set": "imgui_knobs:32"
+  },
+  "nonPOD": {
+    "color_set": true
+  },
+  "structs": {
+    "color_set": [
+      {
+        "name": "base",
+        "type": "ImColor"
+      },
+      {
+        "name": "hovered",
+        "type": "ImColor"
+      },
+      {
+        "name": "active",
+        "type": "ImColor"
+      }
+    ]
+  }
+}

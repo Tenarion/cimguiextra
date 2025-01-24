@@ -14,7 +14,10 @@ set PATH=%PATH%;C:\anima;C:\mingws\i686-7.2.0-release-posix-dwarf-rt_v5-rev1\min
 ::process  files
 :: arg[1] compiler name g++, gcc, clang or cl
 :: arg[2] "" or "comments"
-luajit ./generator.lua g++ ""
+:: arg[3] module name
+:: arg[4..] headers 
+luajit ./generator.lua g++ "" cimgui_extra ../extra/imgui_extra.h
+luajit ./generator.lua g++ "" cimgui_knobs ../imgui-knobs/imgui_knobs.h
 
 ::leave console open
 cmd /k
