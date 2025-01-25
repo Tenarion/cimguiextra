@@ -1,6 +1,6 @@
 local t={
   enums={
-    TYPE={
+    CURVE_TYPE={
       [1]={
         calc_value=0,
         name="LINEAR",
@@ -155,7 +155,7 @@ local t={
         value="37"}}},
   enumtypes={},
   locations={
-    TYPE="imgui_extra:27"},
+    CURVE_TYPE="imgui_extra:27"},
   nonPOD={},
   structs={}}
  return t

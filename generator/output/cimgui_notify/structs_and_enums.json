@@ -1,0 +1,117 @@
+{
+  "enums": {
+    "ImGuiToastPhase": [
+      {
+        "calc_value": 0,
+        "name": "FadeIn",
+        "value": "0"
+      },
+      {
+        "calc_value": 1,
+        "name": "Wait",
+        "value": "1"
+      },
+      {
+        "calc_value": 2,
+        "name": "FadeOut",
+        "value": "2"
+      },
+      {
+        "calc_value": 3,
+        "name": "Expired",
+        "value": "3"
+      },
+      {
+        "calc_value": 4,
+        "name": "COUNT",
+        "value": "4"
+      }
+    ],
+    "ImGuiToastPos": [
+      {
+        "calc_value": 0,
+        "name": "TopLeft",
+        "value": "0"
+      },
+      {
+        "calc_value": 1,
+        "name": "TopCenter",
+        "value": "1"
+      },
+      {
+        "calc_value": 2,
+        "name": "TopRight",
+        "value": "2"
+      },
+      {
+        "calc_value": 3,
+        "name": "BottomLeft",
+        "value": "3"
+      },
+      {
+        "calc_value": 4,
+        "name": "BottomCenter",
+        "value": "4"
+      },
+      {
+        "calc_value": 5,
+        "name": "BottomRight",
+        "value": "5"
+      },
+      {
+        "calc_value": 6,
+        "name": "Center",
+        "value": "6"
+      },
+      {
+        "calc_value": 7,
+        "name": "COUNT",
+        "value": "7"
+      }
+    ],
+    "ImGuiToastType": [
+      {
+        "calc_value": 0,
+        "name": "None",
+        "value": "0"
+      },
+      {
+        "calc_value": 1,
+        "name": "Success",
+        "value": "1"
+      },
+      {
+        "calc_value": 2,
+        "name": "Warning",
+        "value": "2"
+      },
+      {
+        "calc_value": 3,
+        "name": "Error",
+        "value": "3"
+      },
+      {
+        "calc_value": 4,
+        "name": "Info",
+        "value": "4"
+      },
+      {
+        "calc_value": 5,
+        "name": "COUNT",
+        "value": "5"
+      }
+    ]
+  },
+  "enumtypes": {
+    "ImGuiToastPhase": "uint8_t",
+    "ImGuiToastPos": "uint8_t",
+    "ImGuiToastType": "uint8_t"
+  },
+  "locations": {
+    "ImGuiToastPhase": "imgui_notify:79",
+    "ImGuiToastPos": "imgui_notify:88",
+    "ImGuiToastType": "imgui_notify:69"
+  },
+  "nonPOD": [],
+  "structs": []
+}

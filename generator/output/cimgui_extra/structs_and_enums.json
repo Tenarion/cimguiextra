@@ -1,6 +1,6 @@
 {
   "enums": {
-    "TYPE": [
+    "CURVE_TYPE": [
       {
         "calc_value": 0,
         "name": "LINEAR",
@@ -195,7 +195,7 @@
   },
   "enumtypes": [],
   "locations": {
-    "TYPE": "imgui_extra:27"
+    "CURVE_TYPE": "imgui_extra:27"
   },
   "nonPOD": [],
   "structs": []

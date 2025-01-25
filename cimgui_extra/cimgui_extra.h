@@ -47,17 +47,18 @@ typedef enum {
         SCHUBRING3,
         SINPI2,
         SWING,
-    }TYPE;
+    }CURVE_TYPE;
 #else
 #endif // CIMGUI_DEFINE_ENUMS_AND_STRUCTS
 
 #ifndef CIMGUI_DEFINE_ENUMS_AND_STRUCTS
-typedef ImGuiExtra::TYPE TYPE;
+typedef ImGuiExtra::CURVE_TYPE CURVE_TYPE;
 #endif //CIMGUI_DEFINE_ENUMS_AND_STRUCTS
 CIMGUI_API int ImGuiExtra_Curve(const char* label,const ImVec2 size,const int maxpoints,ImVec2* points,int* selection,const ImVec2 rangeMin,const ImVec2 rangeMax);
 CIMGUI_API float ImGuiExtra_CurveValue(float p,int maxpoints,const ImVec2* points);
 CIMGUI_API float ImGuiExtra_CurveValueSmooth(float p,int maxpoints,const ImVec2* points);
 CIMGUI_API void ImGuiExtra_SanityCheck(const char* text);
+CIMGUI_API void ImGuiExtra_DrawRowsBackground(int row_count,float line_height,float x1,float x2,float y_offset,ImU32 col_even,ImU32 col_odd);
 
 
 

@@ -828,4 +828,27 @@ namespace IMGUIEXTRA_NAMESPACE
         return modified;
     }
 
+    void DrawRowsBackground(int row_count, float line_height, float x1, float x2, float y_offset, ImU32 col_even, ImU32 col_odd)
+    {
+        ImDrawList* draw_list = ImGui::GetWindowDrawList();
+        float y0 = ImGui::GetCursorScreenPos().y + (float)(int)y_offset;
+
+        const auto pos = ImGui::GetCursorPos();
+        ImGuiListClipper clipper;
+        clipper.Begin(row_count, line_height);
+        while (clipper.Step())
+        {
+            for (int row_n = clipper.DisplayStart; row_n < clipper.DisplayEnd; ++row_n)
+            {
+                ImU32 col = (row_n & 1) ? col_odd : col_even;
+                if ((col & IM_COL32_A_MASK) == 0)
+                    continue;
+                float y1 = y0 + (line_height * static_cast<float>(row_n));
+                float y2 = y1 + line_height;
+                draw_list->AddRectFilled(ImVec2(x1, y1), ImVec2(x2, y2), col);
+            }
+        }
+        ImGui::SetCursorPos(pos);
+    }
+
 }

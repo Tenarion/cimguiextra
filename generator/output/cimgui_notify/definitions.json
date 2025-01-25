@@ -1,0 +1,63 @@
+{
+  "igInsertNotification": [
+    {
+      "args": "(const ImGuiToast toast)",
+      "argsT": [
+        {
+          "name": "toast",
+          "type": "const ImGuiToast"
+        }
+      ],
+      "argsoriginal": "(const ImGuiToast& toast)",
+      "call_args": "(toast)",
+      "cimguiname": "igInsertNotification",
+      "defaults": {},
+      "funcname": "InsertNotification",
+      "location": "imgui_notify:472",
+      "namespace": "ImGui",
+      "ov_cimguiname": "igInsertNotification",
+      "ret": "void",
+      "signature": "(const ImGuiToast)",
+      "stname": ""
+    }
+  ],
+  "igRemoveNotification": [
+    {
+      "args": "(int index)",
+      "argsT": [
+        {
+          "name": "index",
+          "type": "int"
+        }
+      ],
+      "argsoriginal": "(int index)",
+      "call_args": "(index)",
+      "cimguiname": "igRemoveNotification",
+      "defaults": {},
+      "funcname": "RemoveNotification",
+      "location": "imgui_notify:482",
+      "namespace": "ImGui",
+      "ov_cimguiname": "igRemoveNotification",
+      "ret": "void",
+      "signature": "(int)",
+      "stname": ""
+    }
+  ],
+  "igRenderNotifications": [
+    {
+      "args": "()",
+      "argsT": [],
+      "argsoriginal": "()",
+      "call_args": "()",
+      "cimguiname": "igRenderNotifications",
+      "defaults": {},
+      "funcname": "RenderNotifications",
+      "location": "imgui_notify:492",
+      "namespace": "ImGui",
+      "ov_cimguiname": "igRenderNotifications",
+      "ret": "void",
+      "signature": "()",
+      "stname": ""
+    }
+  ]
+}

@@ -18,7 +18,6 @@ set PATH=%PATH%;C:\anima;C:\mingws\i686-7.2.0-release-posix-dwarf-rt_v5-rev1\min
 :: arg[4..] headers 
 luajit ./generator.lua g++ "" cimgui_extra ../extra/imgui_extra.h
 luajit ./generator.lua g++ "" cimgui_knobs ../imgui-knobs/imgui_knobs.h
+luajit ./generator.lua g++ "" cimgui_notify ../imgui_notify/imgui_notify.h
 
-::leave console open
-cmd /k
-
+ 

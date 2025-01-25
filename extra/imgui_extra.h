@@ -24,7 +24,7 @@ namespace IMGUIEXTRA_NAMESPACE
 {
     static const float CurveTerminator = -10000;
 
-    enum TYPE
+    enum CURVE_TYPE
     {
         LINEAR,
 
@@ -73,4 +73,5 @@ namespace IMGUIEXTRA_NAMESPACE
     IMGUI_API float CurveValue(float p, int maxpoints, const ImVec2* points);
     IMGUI_API float CurveValueSmooth(float p, int maxpoints, const ImVec2* points);
     IMGUI_API void SanityCheck(const char* text);
+    IMGUI_API void DrawRowsBackground(int row_count, float line_height, float x1, float x2, float y_offset, ImU32 col_even, ImU32 col_odd);
 }; // namespace ImGuiExtra

@@ -23,4 +23,8 @@ CIMGUI_API void ImGuiExtra_SanityCheck(const char* text)
 {
     return ImGuiExtra::SanityCheck(text);
 }
+CIMGUI_API void ImGuiExtra_DrawRowsBackground(int row_count,float line_height,float x1,float x2,float y_offset,ImU32 col_even,ImU32 col_odd)
+{
+    return ImGuiExtra::DrawRowsBackground(row_count,line_height,x1,x2,y_offset,col_even,col_odd);
+}
 
