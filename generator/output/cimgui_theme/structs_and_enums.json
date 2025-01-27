@@ -1,0 +1,156 @@
+{
+  "enums": {
+    "ImGuiThemeType_": [
+      {
+        "calc_value": 0,
+        "name": "ImGuiThemeType_ImGuiColorsClassic",
+        "value": "0"
+      },
+      {
+        "calc_value": 1,
+        "name": "ImGuiThemeType_ImGuiColorsDark",
+        "value": "1"
+      },
+      {
+        "calc_value": 2,
+        "name": "ImGuiThemeType_ImGuiColorsLight",
+        "value": "2"
+      },
+      {
+        "calc_value": 3,
+        "name": "ImGuiThemeType_MaterialFlat",
+        "value": "3"
+      },
+      {
+        "calc_value": 4,
+        "name": "ImGuiThemeType_PhotoshopStyle",
+        "value": "4"
+      },
+      {
+        "calc_value": 5,
+        "name": "ImGuiThemeType_GrayVariations",
+        "value": "5"
+      },
+      {
+        "calc_value": 6,
+        "name": "ImGuiThemeType_GrayVariations_Darker",
+        "value": "6"
+      },
+      {
+        "calc_value": 7,
+        "name": "ImGuiThemeType_MicrosoftStyle",
+        "value": "7"
+      },
+      {
+        "calc_value": 8,
+        "name": "ImGuiThemeType_Cherry",
+        "value": "8"
+      },
+      {
+        "calc_value": 9,
+        "name": "ImGuiThemeType_Darcula",
+        "value": "9"
+      },
+      {
+        "calc_value": 10,
+        "name": "ImGuiThemeType_DarculaDarker",
+        "value": "10"
+      },
+      {
+        "calc_value": 11,
+        "name": "ImGuiThemeType_LightRounded",
+        "value": "11"
+      },
+      {
+        "calc_value": 12,
+        "name": "ImGuiThemeType_SoDark_AccentBlue",
+        "value": "12"
+      },
+      {
+        "calc_value": 13,
+        "name": "ImGuiThemeType_SoDark_AccentYellow",
+        "value": "13"
+      },
+      {
+        "calc_value": 14,
+        "name": "ImGuiThemeType_SoDark_AccentRed",
+        "value": "14"
+      },
+      {
+        "calc_value": 15,
+        "name": "ImGuiThemeType_BlackIsBlack",
+        "value": "15"
+      },
+      {
+        "calc_value": 16,
+        "name": "ImGuiThemeType_WhiteIsWhite",
+        "value": "16"
+      },
+      {
+        "calc_value": 17,
+        "name": "ImGuiThemeType_Count",
+        "value": "17"
+      }
+    ]
+  },
+  "enumtypes": [],
+  "locations": {
+    "ImGuiThemeTweaks": "imgui_theme:40",
+    "ImGuiThemeType_": "imgui_theme:13",
+    "ImGuiTweakedTheme": "imgui_theme:69"
+  },
+  "nonPOD": {
+    "ImGuiThemeTweaks": true,
+    "ImGuiTweakedTheme": true
+  },
+  "structs": {
+    "ImGuiThemeTweaks": [
+      {
+        "name": "Rounding",
+        "type": "float"
+      },
+      {
+        "name": "RoundingScrollbarRatio",
+        "type": "float"
+      },
+      {
+        "name": "AlphaMultiplier",
+        "type": "float"
+      },
+      {
+        "name": "Hue",
+        "type": "float"
+      },
+      {
+        "name": "SaturationMultiplier",
+        "type": "float"
+      },
+      {
+        "name": "ValueMultiplierFront",
+        "type": "float"
+      },
+      {
+        "name": "ValueMultiplierBg",
+        "type": "float"
+      },
+      {
+        "name": "ValueMultiplierText",
+        "type": "float"
+      },
+      {
+        "name": "ValueMultiplierFrameBg",
+        "type": "float"
+      }
+    ],
+    "ImGuiTweakedTheme": [
+      {
+        "name": "Theme",
+        "type": "ImGuiThemeType_"
+      },
+      {
+        "name": "Tweaks",
+        "type": "ImGuiThemeTweaks"
+      }
+    ]
+  }
+}

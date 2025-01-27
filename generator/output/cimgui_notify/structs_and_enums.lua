@@ -84,9 +84,9 @@ local t={
     ImGuiToastPos="uint8_t",
     ImGuiToastType="uint8_t"},
   locations={
-    ImGuiToastPhase="imgui_notify:79",
-    ImGuiToastPos="imgui_notify:88",
-    ImGuiToastType="imgui_notify:69"},
+    ImGuiToastPhase="imgui_notify:67",
+    ImGuiToastPos="imgui_notify:76",
+    ImGuiToastType="imgui_notify:57"},
   nonPOD={},
   structs={}}
  return t

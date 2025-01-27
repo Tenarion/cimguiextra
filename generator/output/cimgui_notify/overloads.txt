@@ -1,2 +1,5 @@
 ----------------overloadings---------------------------
-0 overloaded
+igInsertNotification	2
+1	void	igInsertNotification_Toast (const ImGuiToast)
+2	void	igInsertNotification_ToastType (ImGuiToastType,int,const char*,const char*,const void*,const char*,...)
+2 overloaded

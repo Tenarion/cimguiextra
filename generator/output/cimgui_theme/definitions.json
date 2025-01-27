@@ -1,0 +1,384 @@
+{
+  "ImGuiThemeTweaks_ImGuiThemeTweaks": [
+    {
+      "args": "()",
+      "argsT": [],
+      "argsoriginal": "()",
+      "call_args": "()",
+      "cimguiname": "ImGuiThemeTweaks_ImGuiThemeTweaks",
+      "constructor": true,
+      "defaults": {},
+      "funcname": "ImGuiThemeTweaks",
+      "location": "imgui_theme:66",
+      "ov_cimguiname": "ImGuiThemeTweaks_ImGuiThemeTweaks",
+      "signature": "()",
+      "stname": "ImGuiThemeTweaks"
+    }
+  ],
+  "ImGuiThemeTweaks_destroy": [
+    {
+      "args": "(ImGuiThemeTweaks* self)",
+      "argsT": [
+        {
+          "name": "self",
+          "type": "ImGuiThemeTweaks*"
+        }
+      ],
+      "call_args": "(self)",
+      "cimguiname": "ImGuiThemeTweaks_destroy",
+      "defaults": {},
+      "destructor": true,
+      "location": "imgui_theme:66",
+      "ov_cimguiname": "ImGuiThemeTweaks_destroy",
+      "ret": "void",
+      "signature": "(ImGuiThemeTweaks*)",
+      "stname": "ImGuiThemeTweaks"
+    }
+  ],
+  "ImGuiTheme_ApplyTheme": [
+    {
+      "args": "(ImGuiThemeType_ theme)",
+      "argsT": [
+        {
+          "name": "theme",
+          "type": "ImGuiThemeType_"
+        }
+      ],
+      "argsoriginal": "(ImGuiThemeType_ theme)",
+      "call_args": "(theme)",
+      "cimguiname": "ImGuiTheme_ApplyTheme",
+      "defaults": {},
+      "funcname": "ApplyTheme",
+      "location": "imgui_theme:37",
+      "namespace": "ImGuiTheme",
+      "ov_cimguiname": "ImGuiTheme_ApplyTheme",
+      "ret": "void",
+      "signature": "(ImGuiThemeType_)",
+      "stname": ""
+    }
+  ],
+  "ImGuiTheme_ApplyTweakedTheme": [
+    {
+      "args": "(const ImGuiTweakedTheme tweaked_theme)",
+      "argsT": [
+        {
+          "name": "tweaked_theme",
+          "type": "const ImGuiTweakedTheme"
+        }
+      ],
+      "argsoriginal": "(const ImGuiTweakedTheme& tweaked_theme)",
+      "call_args": "(tweaked_theme)",
+      "cimguiname": "ImGuiTheme_ApplyTweakedTheme",
+      "defaults": {},
+      "funcname": "ApplyTweakedTheme",
+      "location": "imgui_theme:79",
+      "namespace": "ImGuiTheme",
+      "ov_cimguiname": "ImGuiTheme_ApplyTweakedTheme",
+      "ret": "void",
+      "signature": "(const ImGuiTweakedTheme)",
+      "stname": ""
+    }
+  ],
+  "ImGuiTheme_Darcula": [
+    {
+      "args": "(float rounding,float hue,float saturation_multiplier,float value_multiplier_front,float value_multiplier_bg,float alpha_bg_transparency)",
+      "argsT": [
+        {
+          "name": "rounding",
+          "type": "float"
+        },
+        {
+          "name": "hue",
+          "type": "float"
+        },
+        {
+          "name": "saturation_multiplier",
+          "type": "float"
+        },
+        {
+          "name": "value_multiplier_front",
+          "type": "float"
+        },
+        {
+          "name": "value_multiplier_bg",
+          "type": "float"
+        },
+        {
+          "name": "alpha_bg_transparency",
+          "type": "float"
+        }
+      ],
+      "argsoriginal": "(float rounding=1.f,float hue=-1.f,float saturation_multiplier=1.f,float value_multiplier_front=1.f,float value_multiplier_bg=1.f,float alpha_bg_transparency=1.f)",
+      "call_args": "(rounding,hue,saturation_multiplier,value_multiplier_front,value_multiplier_bg,alpha_bg_transparency)",
+      "cimguiname": "ImGuiTheme_Darcula",
+      "defaults": {
+        "alpha_bg_transparency": "1.f",
+        "hue": "-1.f",
+        "rounding": "1.f",
+        "saturation_multiplier": "1.f",
+        "value_multiplier_bg": "1.f",
+        "value_multiplier_front": "1.f"
+      },
+      "funcname": "Darcula",
+      "location": "imgui_theme:107",
+      "namespace": "ImGuiTheme",
+      "ov_cimguiname": "ImGuiTheme_Darcula",
+      "ret": "ImGuiStyle",
+      "signature": "(float,float,float,float,float,float)",
+      "stname": ""
+    }
+  ],
+  "ImGuiTheme_ImGuiTheme_FromName": [
+    {
+      "args": "(const char* themeName)",
+      "argsT": [
+        {
+          "name": "themeName",
+          "type": "const char*"
+        }
+      ],
+      "argsoriginal": "(const char* themeName)",
+      "call_args": "(themeName)",
+      "cimguiname": "ImGuiTheme_ImGuiTheme_FromName",
+      "defaults": {},
+      "funcname": "ImGuiTheme_FromName",
+      "location": "imgui_theme:35",
+      "namespace": "ImGuiTheme",
+      "ov_cimguiname": "ImGuiTheme_ImGuiTheme_FromName",
+      "ret": "ImGuiThemeType_",
+      "signature": "(const char*)",
+      "stname": ""
+    }
+  ],
+  "ImGuiTheme_ImGuiTheme_Name": [
+    {
+      "args": "(ImGuiThemeType_ theme)",
+      "argsT": [
+        {
+          "name": "theme",
+          "type": "ImGuiThemeType_"
+        }
+      ],
+      "argsoriginal": "(ImGuiThemeType_ theme)",
+      "call_args": "(theme)",
+      "cimguiname": "ImGuiTheme_ImGuiTheme_Name",
+      "defaults": {},
+      "funcname": "ImGuiTheme_Name",
+      "location": "imgui_theme:34",
+      "namespace": "ImGuiTheme",
+      "ov_cimguiname": "ImGuiTheme_ImGuiTheme_Name",
+      "ret": "const char*",
+      "signature": "(ImGuiThemeType_)",
+      "stname": ""
+    }
+  ],
+  "ImGuiTheme_PopTweakedTheme": [
+    {
+      "args": "()",
+      "argsT": [],
+      "argsoriginal": "()",
+      "call_args": "()",
+      "cimguiname": "ImGuiTheme_PopTweakedTheme",
+      "defaults": {},
+      "funcname": "PopTweakedTheme",
+      "location": "imgui_theme:99",
+      "namespace": "ImGuiTheme",
+      "ov_cimguiname": "ImGuiTheme_PopTweakedTheme",
+      "ret": "void",
+      "signature": "()",
+      "stname": ""
+    }
+  ],
+  "ImGuiTheme_PushTweakedTheme": [
+    {
+      "args": "(const ImGuiTweakedTheme tweaked_theme)",
+      "argsT": [
+        {
+          "name": "tweaked_theme",
+          "type": "const ImGuiTweakedTheme"
+        }
+      ],
+      "argsoriginal": "(const ImGuiTweakedTheme& tweaked_theme)",
+      "call_args": "(tweaked_theme)",
+      "cimguiname": "ImGuiTheme_PushTweakedTheme",
+      "defaults": {},
+      "funcname": "PushTweakedTheme",
+      "location": "imgui_theme:98",
+      "namespace": "ImGuiTheme",
+      "ov_cimguiname": "ImGuiTheme_PushTweakedTheme",
+      "ret": "void",
+      "signature": "(const ImGuiTweakedTheme)",
+      "stname": ""
+    }
+  ],
+  "ImGuiTheme_ShadesOfGray": [
+    {
+      "args": "(float rounding,float value_multiplier_front,float value_multiplier_bg)",
+      "argsT": [
+        {
+          "name": "rounding",
+          "type": "float"
+        },
+        {
+          "name": "value_multiplier_front",
+          "type": "float"
+        },
+        {
+          "name": "value_multiplier_bg",
+          "type": "float"
+        }
+      ],
+      "argsoriginal": "(float rounding=0.f,float value_multiplier_front=1.f,float value_multiplier_bg=1.f)",
+      "call_args": "(rounding,value_multiplier_front,value_multiplier_bg)",
+      "cimguiname": "ImGuiTheme_ShadesOfGray",
+      "defaults": {
+        "rounding": "0.f",
+        "value_multiplier_bg": "1.f",
+        "value_multiplier_front": "1.f"
+      },
+      "funcname": "ShadesOfGray",
+      "location": "imgui_theme:106",
+      "namespace": "ImGuiTheme",
+      "ov_cimguiname": "ImGuiTheme_ShadesOfGray",
+      "ret": "ImGuiStyle",
+      "signature": "(float,float,float)",
+      "stname": ""
+    }
+  ],
+  "ImGuiTheme_ShowThemeTweakGui": [
+    {
+      "args": "(ImGuiTweakedTheme* tweaked_theme)",
+      "argsT": [
+        {
+          "name": "tweaked_theme",
+          "type": "ImGuiTweakedTheme*"
+        }
+      ],
+      "argsoriginal": "(ImGuiTweakedTheme* tweaked_theme)",
+      "call_args": "(tweaked_theme)",
+      "cimguiname": "ImGuiTheme_ShowThemeTweakGui",
+      "defaults": {},
+      "funcname": "ShowThemeTweakGui",
+      "location": "imgui_theme:102",
+      "namespace": "ImGuiTheme",
+      "ov_cimguiname": "ImGuiTheme_ShowThemeTweakGui",
+      "ret": "bool",
+      "signature": "(ImGuiTweakedTheme*)",
+      "stname": ""
+    }
+  ],
+  "ImGuiTheme_SoDark": [
+    {
+      "args": "(float hue)",
+      "argsT": [
+        {
+          "name": "hue",
+          "type": "float"
+        }
+      ],
+      "argsoriginal": "(float hue)",
+      "call_args": "(hue)",
+      "cimguiname": "ImGuiTheme_SoDark",
+      "defaults": {},
+      "funcname": "SoDark",
+      "location": "imgui_theme:105",
+      "namespace": "ImGuiTheme",
+      "ov_cimguiname": "ImGuiTheme_SoDark",
+      "ret": "ImGuiStyle",
+      "signature": "(float)",
+      "stname": ""
+    }
+  ],
+  "ImGuiTheme_ThemeToStyle": [
+    {
+      "args": "(ImGuiThemeType_ theme)",
+      "argsT": [
+        {
+          "name": "theme",
+          "type": "ImGuiThemeType_"
+        }
+      ],
+      "argsoriginal": "(ImGuiThemeType_ theme)",
+      "call_args": "(theme)",
+      "cimguiname": "ImGuiTheme_ThemeToStyle",
+      "defaults": {},
+      "funcname": "ThemeToStyle",
+      "location": "imgui_theme:36",
+      "namespace": "ImGuiTheme",
+      "ov_cimguiname": "ImGuiTheme_ThemeToStyle",
+      "ret": "ImGuiStyle",
+      "signature": "(ImGuiThemeType_)",
+      "stname": ""
+    }
+  ],
+  "ImGuiTheme_TweakedThemeThemeToStyle": [
+    {
+      "args": "(const ImGuiTweakedTheme tweaked_theme)",
+      "argsT": [
+        {
+          "name": "tweaked_theme",
+          "type": "const ImGuiTweakedTheme"
+        }
+      ],
+      "argsoriginal": "(const ImGuiTweakedTheme& tweaked_theme)",
+      "call_args": "(tweaked_theme)",
+      "cimguiname": "ImGuiTheme_TweakedThemeThemeToStyle",
+      "defaults": {},
+      "funcname": "TweakedThemeThemeToStyle",
+      "location": "imgui_theme:78",
+      "namespace": "ImGuiTheme",
+      "ov_cimguiname": "ImGuiTheme_TweakedThemeThemeToStyle",
+      "ret": "ImGuiStyle",
+      "signature": "(const ImGuiTweakedTheme)",
+      "stname": ""
+    }
+  ],
+  "ImGuiTweakedTheme_ImGuiTweakedTheme": [
+    {
+      "args": "(ImGuiThemeType_ theme,const ImGuiThemeTweaks tweaks)",
+      "argsT": [
+        {
+          "name": "theme",
+          "type": "ImGuiThemeType_"
+        },
+        {
+          "name": "tweaks",
+          "type": "const ImGuiThemeTweaks"
+        }
+      ],
+      "argsoriginal": "(ImGuiThemeType_ theme=ImGuiThemeType_DarculaDarker,const ImGuiThemeTweaks& tweaks=ImGuiThemeTweaks())",
+      "call_args": "(theme,tweaks)",
+      "cimguiname": "ImGuiTweakedTheme_ImGuiTweakedTheme",
+      "constructor": true,
+      "defaults": {
+        "theme": "ImGuiThemeType_DarculaDarker",
+        "tweaks": "ImGuiThemeTweaks()"
+      },
+      "funcname": "ImGuiTweakedTheme",
+      "location": "imgui_theme:74",
+      "ov_cimguiname": "ImGuiTweakedTheme_ImGuiTweakedTheme",
+      "signature": "(ImGuiThemeType_,const ImGuiThemeTweaks)",
+      "stname": "ImGuiTweakedTheme"
+    }
+  ],
+  "ImGuiTweakedTheme_destroy": [
+    {
+      "args": "(ImGuiTweakedTheme* self)",
+      "argsT": [
+        {
+          "name": "self",
+          "type": "ImGuiTweakedTheme*"
+        }
+      ],
+      "call_args": "(self)",
+      "cimguiname": "ImGuiTweakedTheme_destroy",
+      "defaults": {},
+      "destructor": true,
+      "location": "imgui_theme:74",
+      "ov_cimguiname": "ImGuiTweakedTheme_destroy",
+      "ret": "void",
+      "signature": "(ImGuiTweakedTheme*)",
+      "stname": "ImGuiTweakedTheme"
+    }
+  ]
+}

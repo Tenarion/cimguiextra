@@ -3,35 +3,18 @@
 
 #include "imgui.h"
 #include "imgui_internal.h"
-#include "./imgui_notify.h"
-#include "./IconsFontAwesome6.h"
+#include "./imgui_notify/imgui_notify.h"
 #include "cimgui_notify.h"
+#include <cassert>
+#include <cstdarg>
 
-ImGuiToast* ImGuiToast_Create()
-{
-    return new ImGuiToast(ImGuiToastType::Info, 3000);
-}
 
-ImGuiToast* ImGuiToast_CreateTypeDismissTime(ImGuiToastType& type, int dismissTime)
+ImGuiToast* ImGuiToast_Create(ImGuiToastType type, int dismissTime,
+                              const char* buttonLabel,
+                              const void* onButtonPress,
+                              const char* format, ...)
 {
-    return new ImGuiToast(type, dismissTime, "");
-}
-
-ImGuiToast* ImGuiToast_CreateTypeFormat(ImGuiToastType& type, const char* format, ...)
-{
-    return new ImGuiToast(type, format);
-}
-
-ImGuiToast* ImGuiToast_CreateTypeDismissTimeFormat(ImGuiToastType& type, int dismissTime, const char* format,
-    ...)
-{
-    return new ImGuiToast(type, dismissTime, format);
-}
-
-ImGuiToast* ImGuiToast_CreateTypeDismissTimeButtonLabelOnButtonPressFormat(ImGuiToastType& type, int dismissTime,
-    const char* buttonLabel, const std::function<void()>& onButtonPress, const char* format, ...)
-{
-    return new ImGuiToast(type, dismissTime, buttonLabel, onButtonPress, format);
+    return new ImGuiToast(type, dismissTime, buttonLabel, reinterpret_cast<std::function<void()>&>(onButtonPress), format);
 }
 
 void ImGuiToast_Destroy(ImGuiToast* self)
@@ -49,9 +32,9 @@ void ImGuiToast_setContent(ImGuiToast* self, const char* format, ...)
     self->setContent(format);
 }
 
-void ImGuiToast_setOnButtonPress(ImGuiToast* self, const std::function<void()>& onButtonPress)
+void ImGuiToast_setOnButtonPress(ImGuiToast* self, const void* onButtonPress)
 {
-    self->setOnButtonPress(onButtonPress);
+    self->setOnButtonPress(reinterpret_cast<std::function<void()>&>(onButtonPress));
 }
 
 void ImGuiToast_setButtonLabel(ImGuiToast* self, const char* format, ...)
@@ -89,9 +72,9 @@ const char* ImGuiToast_getContent(ImGuiToast* self)
     return self->getContent();
 }
 
-std::chrono::nanoseconds ImGuiToast_getElapsedTime(ImGuiToast* self)
+int ImGuiToast_getElapsedTime(ImGuiToast* self)
 {
-    return self->getElapsedTime();
+    return self->getElapsedTime().count();
 }
 
 ImGuiToastPhase ImGuiToast_getPhase(ImGuiToast* self)
@@ -109,9 +92,10 @@ ImGuiWindowFlags ImGuiToast_getWindowFlags(ImGuiToast* self)
     return self->getWindowFlags();
 }
 
-std::function<void()> ImGuiToast_getOnButtonPress(ImGuiToast* self)
+void* ImGuiToast_getOnButtonPress(ImGuiToast* self)
 {
-    return self->getOnButtonPress();
+    auto fun = self->getOnButtonPress();
+    return fun.target<void(*)>();
 }
 
 const char* ImGuiToast_getButtonLabel(ImGuiToast* self)
